@@ -11,6 +11,7 @@ SET(EXAMPLE_DIRS
   Status
   Receiver
   Thread
+  Lab_PWP
   )
 
 if (${OpenIGTLink_PROTOCOL_VERSION} GREATER 1)
@@ -27,6 +28,7 @@ if (${OpenIGTLink_PROTOCOL_VERSION} GREATER 1)
     Capability
     Trajectory
     SessionManager
+    Lab_PWP
     )
 endif (${OpenIGTLink_PROTOCOL_VERSION} GREATER 1)
 
@@ -40,6 +42,7 @@ else(NOT OpenIGTLink_PLATFORM_QNX)
       Tracker
       Status
       Receiver
+      Lab_PWP
       )
 endif(NOT OpenIGTLink_PLATFORM_QNX)
 
